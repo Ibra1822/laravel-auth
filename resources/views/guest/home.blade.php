@@ -2,6 +2,6 @@
 
 @section('content')
 
-<h1 class="text-center" >Home di {{Auth::user()->name}}</h1>
+<h1 class="text-center" >Home</h1>
 
 @endsection
