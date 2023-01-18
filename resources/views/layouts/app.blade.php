@@ -22,7 +22,7 @@
 <body>
     <div id="app">
 
-        @include('partials.header');
+        @include('admin.partials.header')
 
         <main class="">
             @yield('content')

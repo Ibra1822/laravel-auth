@@ -3,7 +3,7 @@
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center" href="{{ url('/') }}">
                     <div class="logo">
-                        <img class="logo-img" src="https://www.bheroes.it/wp-content/uploads/2020/07/Logo-boolean.png" alt="">
+                        <img class="logo-img" src="https://www.bheroes.it/wp-content/uploads/2020/07/Logo-boolean.png" title="Logo" alt="Logo">
                     </div>
                     {{-- config('app.name', 'Laravel') --}}
                 </a>
