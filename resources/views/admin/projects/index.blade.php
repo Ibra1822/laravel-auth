@@ -16,7 +16,7 @@
         <th scope="col">ID</th>
         <th scope="col">Name</th>
         <th scope="col">Client Name</th>
-        <th scope="col">Control</th>
+        <th class="text-center" scope="col">Control</th>
       </tr>
     </thead>
     <tbody>
@@ -26,10 +26,14 @@
         <th scope="row">{{$project->id}}</th>
         <td>{{$project->name}}</td>
         <td>{{$project->client_name}}</td>
-        <td>
+        <td class="d-flex justify-content-evenly ">
             <a class="btn btn-primary" href="{{route('admin.projects.show',$project)}}"><i class="fa-solid fa-eye"></i></a>
             <a class="btn btn-warning" href="{{route('admin.projects.edit',$project)}}"><i class="fa-solid fa-pen"></i></a>
-            <a class="btn btn-danger" href="#"><i class="fa-solid fa-trash-can"></i></a>
+            <form onsubmit="return confirm('Sei sicuro di voler eliminare questo elemento')" action="{{route('admin.projects.destroy',$project)}}" method="POST" >
+            @csrf
+            @method('DELETE')
+                <button type="submit" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
+            </form>
         </td>
       </tr>
 
