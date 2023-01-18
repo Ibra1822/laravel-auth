@@ -1,8 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-<h1 class="text-center">Projects</h1>
+<h1 class="text-center mb-3">Projects</h1>
 
+<div class="container text-center">
+
+<a class="btn btn-warning " href="{{route('admin.projects.create')}}">Crea Un Nuovo Progetto</a>
+
+</div>
 
 <div class="container">
 <table class="table">
