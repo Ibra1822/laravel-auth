@@ -7,3 +7,22 @@ nav {
 .logo-img {
     width: 90px;
 }
+
+.ib-show {
+    background-color: rgb(126, 126, 126);
+    height: calc(100vh - 100px);
+    padding: 20px;
+    h1,
+    h2 {
+        margin: 20px;
+        color: #fff;
+    }
+    img {
+        border-radius: 40px;
+    }
+    p {
+        margin: 30px;
+        font-size: 1.2rem;
+        color: #fff;
+    }
+}
