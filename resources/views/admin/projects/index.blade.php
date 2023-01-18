@@ -20,25 +20,23 @@
   <div class="card-down">
     <h5 class="my-3">{{$project->name}}</h5>
     <div class="d-flex justify-content-center align-items-center ">
-        <a class="btn btn-dark" href="{{route('admin.projects.show',$project)}}"><i class="fa-solid fa-eye"></i></a>
+        <a class="btn btn-light" href="{{route('admin.projects.show',$project)}}"><i class="fa-solid fa-eye"></i></a>
         <a class="btn btn-light" href="{{route('admin.projects.edit',$project)}}"><i class="fa-solid fa-pen"></i></a>
         <form onsubmit="return confirm('Sei sicuro di voler eliminare questo elemento')" action="{{route('admin.projects.destroy',$project)}}" method="POST" >
         @csrf
         @method('DELETE')
-            <button type="submit" class="btn btn-dark"><i class="fa-solid fa-trash-can"></i></button>
+            <button type="submit" class="btn btn-light"><i class="fa-solid fa-trash-can"></i></button>
         </form>
     </div>
   </div>
 </div>
 
-
-
-
-
     @endforeach
 
 </div>
-
+<div class="cont-pagination d-flex justify-content-between my-5">
+   <p>{{$projects->links()}}</p>
+</div>
 
 
 @endsection
