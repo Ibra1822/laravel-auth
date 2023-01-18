@@ -1,9 +1,9 @@
 
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-            <div class="container">
+        <nav class="navbar navbar-expand-md ib-nav ">
+            <div class="container ">
                 <a class="navbar-brand d-flex align-items-center" href="{{ url('/') }}">
                     <div class="logo">
-                        <img class="logo-img" src="https://www.bheroes.it/wp-content/uploads/2020/07/Logo-boolean.png" title="Logo" alt="Logo">
+                       <h2>Welcome</h2>
                     </div>
                     {{-- config('app.name', 'Laravel') --}}
                 </a>
@@ -18,12 +18,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{url('/') }}">{{ __('Home') }}</a>
                         </li>
-                        @auth
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{route('admin.projects.index') }}">Projects</a>
-                        </li>
-                        @endauth
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -41,10 +36,10 @@
                         @else
                         <li class="nav-item dropdown">
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                {{ Auth::user()->name }}
+                               <span class="ib-name"> {{ Auth::user()->name }} </span>
                             </a>
 
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <div class="dropdown-menu dropdown-menu-right ib-dropdown" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="{{ route('admin.dashboard') }}">Admin</a>
                                 <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

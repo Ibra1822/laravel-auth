@@ -1,7 +1,12 @@
-@extends('layouts.guest')
+@extends('layouts.presentation')
 
 @section('content')
-
-<h1 class="text-center" >Home</h1>
-
+<div class="cont-all">
+    <div class="cont-aside-guest">
+        @include('admin.partials.aside')
+    </div>
+    <div class="ib-content ">
+        <h1> Benvenuto @auth {{ Auth::user()->name}} @endauth </h1>
+    </div>
+</div>
 @endsection
