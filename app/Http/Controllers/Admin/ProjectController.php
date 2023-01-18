@@ -81,6 +81,12 @@ class ProjectController extends Controller
     {
         $data = $request->all();
 
+        if ($data['name']!= $project->name) {
+            $data['slug'] = Project::generateSlug($data['name']);
+        }else{
+            $data['slug'] = $project->slug;
+        }
+
         $project->update($data);
 
         return redirect()->route('admin.projects.show',$project);
