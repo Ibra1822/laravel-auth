@@ -29,3 +29,26 @@ nav {
         color: #fff;
     }
 }
+
+.cont-errors {
+    width: 650px;
+    border: 1.5px solid red;
+    border-radius: 20px;
+    color: red;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    ul {
+        list-style: none;
+    }
+}
+
+.error {
+    border: 1.5px solid red;
+}
+
+.ib-form {
+    p {
+        color: red;
+    }
+}
