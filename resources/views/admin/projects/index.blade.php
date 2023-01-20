@@ -15,7 +15,7 @@
 
 <div class="ib-card-index p-4">
   <div class="card-up">
-    <img src="{{$project->cover_image}}" alt="">
+    <img src="{{asset('storage/' . $project->cover_image )}}" alt="">
   </div>
   <div class="card-down">
     <h5 class="my-3">{{$project->name}}</h5>
