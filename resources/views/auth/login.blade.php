@@ -3,8 +3,8 @@
 @section('content')
 <div class="container mt-4">
     <div class="row justify-content-center">
-        <div class="col-md-8 ib-login">
-            <div class="card ib-login-card">
+        <div class="col-md-8 ib-start">
+            <div class="card ib-start-card">
                 <div class="card-header ib-card-header">{{ __('Login') }}</div>
 
                 <div class="card-body ib-login-body">

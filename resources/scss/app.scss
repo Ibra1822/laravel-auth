@@ -4,19 +4,9 @@ body {
         "Lucida Sans", Arial, sans-serif;
 }
 
-.ib-login {
+.ib-start {
     width: 600px;
-    .ib-card-header {
-        background-color: #343435;
-        color: #fff;
-        font-weight: bold;
-        text-align: center;
-    }
-    .ib-login-card {
-        border: 1px solid #343435;
-        padding: 0;
-        box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.7);
-    }
+
     label {
         text-align: center;
     }
@@ -24,8 +14,28 @@ body {
         color: #343435;
     }
 }
+.ib-card-header {
+    background-color: #343435;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
 
-//login
+.ib-start-card {
+    border: 1px solid #343435;
+    padding: 0;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.7);
+}
+
+.ib-register {
+    width: 800px;
+    label {
+        text-align: center;
+    }
+}
+
+//start/login/register//dashboard
+
 .ib-nav {
     height: 100px;
     background-color: #343435;
