@@ -27,6 +27,7 @@ class ProjectRequest extends FormRequest
             'name'=> 'required|min:3',
             'client_name' => 'required',
             'summary' => 'required|min:3',
+            'cover_image' => 'image|nullable|max:32000'
         ];
     }
 
@@ -39,7 +40,8 @@ class ProjectRequest extends FormRequest
         'client_name.required' => 'Il nome del cliente è obbligatorio',
         'summary.required' => 'La descrizzione è obbligatoria',
         'summary.required' => 'Il numero minimo dei caratteri nella descrizzione è 3',
-
+        'cover_image.image' => 'Il file deve essere un immagine',
+        'cover_image.max' => 'Il file non puo essere più grande di 3M'
     ];
     }
 

@@ -36,7 +36,8 @@
       </div>
       <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Immagine</label>
-        <input type="file" onchange="showImage(event)"  class="form-control " value="{{old('cover_image')}}"  name="cover_image">
+        <input type="file" onchange="showImage(event)"  class="form-control @error('cover_image') error @enderror " value="{{old('cover_image')}}"  name="cover_image">
+        @error('cover_image') <p> {{$message}} </p> @enderror
         <div class="cont-output">
             <img src="" alt="" id="output-image">
         </div>
