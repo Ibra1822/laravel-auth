@@ -94,6 +94,17 @@ class ProjectController extends Controller
             $data['slug'] = $project->slug;
         }
 
+        if (array_key_exists('cover_image',$data)) {
+            if ($project->cover_image) {
+                Storage::disk('public')->delete($project->cover_image);
+            }
+
+            $data['original_image_name'] = $request->file('cover_image')->getClientOriginalName();
+            $data['cover_image'] = Storage::put('uploads',$data['cover_image']);
+
+        }
+
+
         $project->update($data);
 
         return redirect()->route('admin.projects.show',$project);
