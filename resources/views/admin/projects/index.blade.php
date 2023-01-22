@@ -15,8 +15,12 @@
 
 <div class="ib-card-index p-4">
   <div class="card-up">
+    @if ($project->cover_image)
     <img src="{{asset('storage/' . $project->cover_image )}}" alt="">
-  </div>
+    @else
+    <img src="https://troianiortodonzia.it/wp-content/uploads/2016/10/orionthemes-placeholder-image.png" alt="">
+    @endif
+</div>
   <div class="card-down">
     <h5 class="my-3">{{$project->name}}</h5>
     <div class="d-flex justify-content-center align-items-center ">

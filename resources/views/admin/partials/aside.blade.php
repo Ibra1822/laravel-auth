@@ -7,6 +7,7 @@
     <li class="">
         <a class="nav-link" href="{{route('admin.projects.index') }}"> <i class="fa-solid fa-list-check"></i> Projects</a>
     </li>
+
     @endauth
 </ul>
 </div>

@@ -40,7 +40,7 @@
         <input type="file" onchange="showImage(event)" class="form-control @error('cover_image') error @enderror"   placeholder="Inserisci immagine" name="cover_image">
         @error('cover_image') <p> {{$message}} </p> @enderror
         <div class="cont-output">
-            <img src="" alt="" id="output-image">
+            <img src="{{asset('storage/' . $project->cover_image )}}"" alt="" id="output-image">
         </div>
 
     </div>
