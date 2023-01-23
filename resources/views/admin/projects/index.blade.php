@@ -10,7 +10,6 @@
 </div>
 
 <div class="container index-cont">
-
     @foreach ($projects as $project )
 
 <div class="ib-card-index p-4">
